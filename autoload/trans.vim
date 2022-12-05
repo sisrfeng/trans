@@ -1,10 +1,6 @@
-" ============================================================================
-" File:        trans.vim
-" Description: Autoload functions for translate-shell.vim
 " Maintainer:  Egor Churaev <egor.churaev@gmail.com>
 " Licence:     GPLv3
 "
-" ============================================================================
 
 " Public functions {{{ "
 function! trans#TransTerm(...)
@@ -44,8 +40,7 @@ function! trans#TransSelectDirection(select_list, line1, line2, count)
     call common#window#OpenTrans(cmd)
 endfunction
 
-" select list is a variable for choise the way for selecting translate
-" direction:
+" select list is a variable for choise the way for selecting translate  direction:
 " 0 - vim way by using inputlist
 " 1 - by using fzf
 function! trans#TransInteractive(select_list, ...)
